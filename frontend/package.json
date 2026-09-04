@@ -6,9 +6,9 @@
   "type": "module",
   "packageManager": "pnpm@11.5.0",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
-    "build:ce": "tsc -b && vite build --mode ce",
+    "dev": "node init && vite",
+    "build": "node init && tsc -b && vite build",
+    "build:ce": "node init && tsc -b && vite build --mode ce",
     "preview": "vite preview",
     "test": "vitest run",
     "test:watch": "vitest"
